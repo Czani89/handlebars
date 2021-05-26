@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dom Loaded</title>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        var greetBtn = document.querySelector(".theButton");
+        greetBtn.addEventListener("click", function () {
+          alert("You clicked me");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button type="button" name="button" class="theButton">Click me!</button>
+  </body>
+  <script type="text/javascript">
+    alert("Bottom of the page!");
+  </script>
+</html>
